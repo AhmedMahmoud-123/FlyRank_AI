@@ -579,15 +579,14 @@
 
   <!-- ABSTRACT -->
   <section id="abstract">
-    <div class="section-number">00 / Abstract</div>
-    <h2>Question → method → result.</h2>
-
-    <div class="abstract-grid">
-      <div class="abstract-card">
+    <div class="abstract-card">
         <strong>Question.</strong>
         <p>
-          Which content items should an editor review first when the goal is
-          to identify pages showing a measured decline signal?
+          FlyRank publishes content directly into client sites and already
+          flags declining pages in production with hand-written rules — a
+          health score and quick-win tags. Out of thousands of live pages,
+          which ones should a human check first, and can a learned ranking
+          do that job better than the existing rule?
         </p>
       </div>
 
@@ -626,16 +625,34 @@
     <div class="section-number">01 / Introduction & problem statement</div>
     <h2>What should an editor review first?</h2>
 
-    <p>
-      FlyRank editors face a large number of content items with different
-      levels of visibility, freshness, search position, and query behavior.
-      The system turns these signals into a ranked review queue.
+   <p>
+      FlyRank builds content as infrastructure: it researches, writes, and
+      publishes content straight into a client's website, then watches
+      search performance and optimizes. But published content decays —
+      rankings slip, clicks drop — and most teams notice too late. Out of
+      thousands of pages per client, someone has to decide which one to fix
+      first.
     </p>
 
     <p>
-      The decision supported by this work is prioritization: which pages
-      deserve human attention first. A recommendation is a review prompt,
-      not an automatic editorial action.
+      That decision already has a production answer: a health score and
+      quick-win tags, hand-written if-this-then-that rules built on
+      thresholds a person chose. They work, and they run today. But fixed
+      rules run out where the underlying signals get numerous, tangled, and
+      shifting — impressions, position, freshness, and query behavior all
+      moving at once. This capstone lives in exactly that gap: can a
+      leakage-clean, client-held-out model turn those same signals into a
+      review queue that competes with, or usefully complements, the rule
+      already in production?
+    </p>
+
+    <p>
+      FlyRank editors face a large number of content items with different
+      levels of visibility, freshness, search position, and query behavior.
+      The system turns these signals into a ranked review queue. A
+      recommendation is a review prompt, not an automatic editorial action —
+      the goal is not to automate editorial decisions, it is to help editors
+      decide what deserves attention first.
     </p>
 
     <div class="callout">
