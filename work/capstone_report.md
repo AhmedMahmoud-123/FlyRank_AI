@@ -5,7 +5,7 @@
 * **Repo:** https://github.com/AhmedMahmoud-123/FlyRank_AI
 * **Date:** August 2026
 
-## 1. Problem framing
+## 1. Problem Framing
 
 This project supports the decision of **which content items a FlyRank editor should review first for possible refresh or improvement**.
 
