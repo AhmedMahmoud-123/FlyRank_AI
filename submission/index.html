@@ -146,7 +146,49 @@
       font-size: 12px;
     }
 
-    section { margin-top: 80px; }
+    section {
+      width: 100%;
+      max-width: 1080px;
+      margin: 55px auto 0;
+      padding: 42px 46px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 10px 30px rgba(74, 47, 31, .06);
+    }
+
+    section + section {
+      margin-top: 28px;
+    }
+
+    section h2 {
+      max-width: 900px;
+    }
+
+    section p {
+      max-width: 850px;
+    }
+
+    section .table-wrap,
+    section .chart-card,
+    section .comparison,
+    section .recommendations {
+      max-width: 100%;
+    }
+
+    #abstract {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    #abstract .abstract-card {
+      width: 100%;
+    }
 
     .section-number {
       color: var(--terracotta);
@@ -490,9 +532,14 @@
     }
 
     footer {
-      margin-top: 100px;
-      padding: 40px 0 0;
-      border-top: 1px solid var(--line);
+      width: 100%;
+      max-width: 1080px;
+      margin: 28px auto 0;
+      padding: 34px 46px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 10px 30px rgba(74, 47, 31, .06);
       color: var(--muted);
       font-size: 13px;
     }
@@ -511,7 +558,15 @@
       .page { padding: 14px 14px 60px; }
       .hero { padding: 35px 23px; border-radius: 20px; }
       .stats { grid-template-columns: 1fr; }
-      section { margin-top: 55px; }
+      section {
+        margin-top: 24px;
+        padding: 28px 22px;
+      }
+
+      footer {
+        margin-top: 24px;
+        padding: 28px 22px;
+      }
       .chart-card { padding: 20px; }
     }
   </style>
